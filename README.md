@@ -1,0 +1,5 @@
+# Drone
+Control architecture for an experimental drone.
+Starting a drone/quadcopter project. Starting out with reading and plotting a gyroscope and interpreting that information. May add another gyroscope and then have arduino poll those gyroscopes. What follows would be some accelerometer data, again maybe followed by some polling from the controller. These two gyro/accelerometers could actually be split into different resolutions (ie one accelerometer handles <2g maneuvers, the other <16).
+Will then try and create a feedback loop where an LED will blink with a higher frequency as the gyro is tilted away from its neutral "home" plane. This would mimic an auto levelling function where the computer controls the quadcopter motors' rpm to level itself using differential thrust. If successful will add some forward motion functions, gps, xbee units, etc.
+If successful may save up to buy some quadcopter motors and blades and implement. Ideally would use a teensy 4.0 and a shift register if I need more pins.
